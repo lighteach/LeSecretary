@@ -1,0 +1,44 @@
+{
+  "ShortCutList": [
+    {
+      "id": 0,
+      "title": "Open EditPlus",
+      "modKey1": "control",
+      "modKey2": "alt",
+      "modKey3": "",
+      "key": "E",
+      "cmd": "C:\\Program Files\\EditPlus\\editplus.exe",
+      "parameters": ""
+    },
+    {
+      "id": 1,
+      "title": "Open Visual Studio 2019",
+      "modKey1": "control",
+      "modKey2": "alt",
+      "modKey3": "",
+      "key": "V",
+      "cmd": "C:\\Users\\LightEach\\Desktop\\Visual Studio 2019.lnk",
+      "parameters": ""
+    },
+    {
+      "id": 2,
+      "title": "Open Chrome",
+      "modKey1": "shift",
+      "modKey2": "control",
+      "modKey3": "",
+      "key": "R",
+      "cmd": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "parameters": ""
+    },
+    {
+      "id": 3,
+      "title": "Open SSMS",
+      "modKey1": "control",
+      "modKey2": "alt",
+      "modKey3": "",
+      "key": "T",
+      "cmd": "C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE\\Ssms.exe",
+      "parameters": ""
+    }
+  ]
+}
