@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
@@ -74,8 +74,8 @@ namespace LeSecretary
         #region Form1_FormClosing
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult confirm = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            e.Cancel = (confirm == DialogResult.Cancel);
+            //DialogResult confirm = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            //e.Cancel = (confirm == DialogResult.Cancel);
         }
         #endregion
 
@@ -96,7 +96,9 @@ namespace LeSecretary
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Close();
+                DialogResult confirm = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (confirm == DialogResult.OK)
+                    this.Close();
             }
         } 
         #endregion
@@ -107,6 +109,12 @@ namespace LeSecretary
             this.Visible = true;
             this.ShowIcon = true;
             notifyIcon1.Visible = false;
+
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.BringToFront();
+            this.TopLevel = true;
+            this.Focus();
         }
         #endregion
 
